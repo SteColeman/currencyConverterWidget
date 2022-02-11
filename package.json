@@ -9,8 +9,6 @@
   "author": "Ste Coleman",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.2",
-    "node-fetch": "^2.6.7",
-    "requirejs": "^2.3.6"
+    "express": "^4.17.2"
   }
 }

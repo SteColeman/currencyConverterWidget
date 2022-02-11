@@ -8,7 +8,6 @@ var toCurrency =  document.getElementById('toCurrency').value.toUpperCase(); //a
 var fromAmount =  document.getElementById('amount').value;
 
 
-
 document.getElementById('send').addEventListener('click', getConversion())
 // document.getElementById('send').on('click', getConversion())
 
@@ -20,14 +19,13 @@ function getConversion() {
     fetch(api, settings)
     .then(res => res.json())
     .then((json) => {
-        console.log(api);
-        console.log(json);
+
         //check to see if the api response status has succeeded or failed. if it fails the API error message is displayed
         if(json.status === 'failed') {
             document.getElementById('finalValue').innerHTML = json.error.message;
 
+            //if response status doesnt fail, continue with currency conversion
         } else {
-
         //get the currency rate from the api and wrap in variable
         var currencyRate = json.rates[toCurrency].rate;
 
@@ -36,7 +34,6 @@ function getConversion() {
         returnableAmount = returnableAmount.toFixed(2)
 
         document.getElementById('finalValue').innerHTML = fromCurrency + ' ' + fromAmount + ' is equal to: ' + returnableAmount + ' ' + toCurrency;
-        console.log(returnableAmount);
         }
     });
 
