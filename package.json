@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ste Coleman",
   "license": "ISC",
   "dependencies": {
-    "node-fetch": "^3.2.0"
+    "express": "^4.17.2",
+    "node-fetch": "^2.6.7",
+    "requirejs": "^2.3.6"
   }
 }

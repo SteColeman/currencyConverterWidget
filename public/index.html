@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curency Converter Widget</title>
+</head>
+<body>
+
+    <div id="root">
+        <label for="from">Base Currency</label>
+        <input type="text" name="from" id="baseCurrency" placeholder="GBP">
+
+        <label for="to">To Currency</label>
+        <input type="text" name="to" id="toCurrency" placeholder="USD">
+
+        <label for="amount">Amount to exchange</label>
+        <input type="number" name="amount" id="amount" placeholder="5">
+
+        <p id="finalValue">^</p>
+
+        <button id="send">Send!</button>
+
+    </div>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
