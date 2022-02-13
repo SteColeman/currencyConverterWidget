@@ -4,27 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Curency Converter Widget</title>
 </head>
 <body>
 
     <div id="root">
-        <label for="from">Base Currency</label>
+        <label for="from">From:</label>
         <input type="text" name="from" id="baseCurrency" placeholder="GBP">
 
-        <label for="to">To Currency</label>
+        <label for="to">To:</label>
         <input type="text" name="to" id="toCurrency" placeholder="USD">
 
-        <label for="amount">Amount to exchange</label>
+        <label for="amount">Amount:</label>
         <input type="number" name="amount" id="amount" placeholder="5">
+<br>
+        <button id="send">Convert</button>
 
         <p id="finalValue"></p>
         <p id="singleValue"></p>
 
-        <button id="send">Send!</button>
-
     </div>
-
+    
     <script src="index.js"></script>
     
 </body>

@@ -31,17 +31,20 @@ function getConversion() {
             //if response status doesnt fail, continue with currency conversion
         } else {
         //get the currency rate from the api and wrap in variable
-            console.log(json);
         var currencyRate = json.rates[toCurrency].rate;
+
         //base currency full name
         var fromCurrencyTitle = json.base_currency_name;
+
         //to currency full title
         var toCurrencyTitle = json.rates[toCurrency].currency_name;
 
         //multiply users entered amount by currency rate to 
         var returnableAmount = currencyRate * fromAmount;
+
         //set the returned amount to 2 decimal places
         returnableAmount = returnableAmount.toFixed(2);
+        
         //push the returned values to the dom
         document.getElementById('finalValue').innerHTML = fromAmount + ' ' + fromCurrencyTitle + ' = ' + returnableAmount + ' ' + toCurrencyTitle;
         document.getElementById('singleValue').innerHTML = '1 ' + fromCurrency + ' = ' + currencyRate + ' ' + toCurrency;
