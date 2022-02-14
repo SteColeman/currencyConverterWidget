@@ -19,16 +19,17 @@ function getConversion() {
     //api link with currency variables set 
     var api = 'https://api.getgeoapi.com/v2/currency/convert?api_key=ae69e404bebee939d172f40d10a54f77be475ffa&from=' + fromCurrency + '&to=' + toCurrency;
 
+    //using the fetch api interface to grab the information from the getgeo api 
     fetch(api, settings)
     //response put into json format
     .then(res => res.json())
     .then((json) => {
 
-        //check to see if the api response status has succeeded or failed. if it fails the API error message is displayed
+        //check to see if the api response status has succeeded or failed. if it fails the API's generated error message is displayed
         if(json.status === 'failed') {
             document.getElementById('finalValue').innerHTML = json.error.message;
 
-            //if response status doesnt fail, continue with currency conversion
+        //if response status doesnt fail, continue with currency conversion
         } else {
         //get the currency rate from the api and wrap in variable
         var currencyRate = json.rates[toCurrency].rate;
@@ -44,7 +45,7 @@ function getConversion() {
 
         //set the returned amount to 2 decimal places
         returnableAmount = returnableAmount.toFixed(2);
-        
+
         //push the returned values to the dom
         document.getElementById('finalValue').innerHTML = fromAmount + ' ' + fromCurrencyTitle + ' = ' + returnableAmount + ' ' + toCurrencyTitle;
         document.getElementById('singleValue').innerHTML = '1 ' + fromCurrency + ' = ' + currencyRate + ' ' + toCurrency;

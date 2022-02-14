@@ -1,3 +1,6 @@
+/*
+Styling for the main div the widget sits inside
+*/
 #root {
     font-family: Calibri, sans-serif;
     min-height: 170px;
@@ -7,10 +10,17 @@
     padding: 1rem;
     border-radius: 10px;
 }
+/*
+styles for the label text
+*/
 
 label {
     font-weight: bold;
 }
+
+/*
+Text box styling. for both text and number inputs
+*/
 
 input {
     height: 1.5rem;
@@ -20,6 +30,9 @@ input {
     margin: 1rem 0;
 }
 
+/*
+Submit button styling
+*/
 button {
     height: 2rem;
     width: 8rem;
@@ -30,6 +43,9 @@ button {
     font-weight: bold;
 }
 
+/*
+cursor turns into a pointer in hover state over submit button
+*/
 button:hover {
     cursor: pointer;
 }
