@@ -9,22 +9,35 @@
 </head>
 <body>
 
-    <div id="root">
+<div id="root">
+    <div>
         <label for="from">From:</label>
         <input type="text" name="from" id="baseCurrency" placeholder="GBP">
 
+    </div>
+    <div>
         <label for="to">To:</label>
         <input type="text" name="to" id="toCurrency" placeholder="USD">
 
-        <label for="amount">Amount:</label>
-        <input type="number" name="amount" id="amount" placeholder="5">
-<br>
-        <button id="send">Convert</button>
-
-        <p id="finalValue"></p>
-        <p id="singleValue"></p>
 
     </div>
+
+    <div>
+        <label for="amount">Amount:</label>
+        <input type="number" name="amount" id="amount" placeholder="5">
+
+        <button id="send">Convert</button>
+
+    </div>
+
+    <div>
+        <p id="finalValue"></p>
+    </div>
+
+    <div>
+        <p id="singleValue"></p>
+    </div>
+</div>
     
     <script src="index.js"></script>
     

@@ -3,12 +3,12 @@ Styling for the main div the widget sits inside
 */
 #root {
     font-family: Calibri, sans-serif;
-    min-height: 170px;
-    max-width: 30%;
-    max-height: 30%;
+    max-width: 100%;
     background-color: #e6e6e6;
     padding: 1rem;
     border-radius: 10px;
+    display: flex;
+    column-gap: 30px;
 }
 /*
 styles for the label text
