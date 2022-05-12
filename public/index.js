@@ -30,7 +30,7 @@ function getConversion() {
 
         //if response status doesnt fail, continue with currency conversion
         } else {
-        //get the currency rate from the api and wrap in letiable
+        //get the currency rate from the api and wrap in letiable 
         let currencyRate = json.rates[toCurrency].rate;
 
         //base currency full name

@@ -2,13 +2,14 @@
 Styling for the main div the widget sits inside
 */
 #root {
-    font-family: Calibri, sans-serif;
+    font-family: "open-sans", sans-serif;
     max-width: 100%;
-    background-color: #e6e6e6;
+    background-color: #616161;
     padding: 1rem;
     border-radius: 10px;
     display: flex;
     column-gap: 30px;
+    color: white;
 }
 /*
 styles for the label text
@@ -38,7 +39,7 @@ button {
     width: 8rem;
     border-radius: 7px;
     border: none;
-    background-color: rgb(27, 127, 196);
+    background-color: #3164A1;
     color: white;
     font-weight: bold;
 }
